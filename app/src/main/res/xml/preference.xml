@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="test_bool"
+        android:title="test_bool (default:false)"
+        android:defaultValue="false"
+        android:enabled="true"
+        />
+
+    <EditTextPreference
+        android:key="test_string"
+        android:title="test_string"
+        android:enabled="true"
+        />
+
+    <EditTextPreference
+        android:key="test_int"
+        android:title="test_int (default:123)"
+        android:defaultValue="123"
+        android:enabled="true"
+        android:numeric="decimal"
+        />
+
+    <ListPreference
+        android:key="target_device_type"
+        android:title="target_device_type (default:test1)"
+        android:entries="@array/entry_keys"
+        android:entryValues="@array/entry_values"
+        android:defaultValue="test1"
+        android:enabled="true"
+        />
+
+</PreferenceScreen>
